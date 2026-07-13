@@ -1,0 +1,115 @@
+/* CARD */
+.mainCard {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.08);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mainCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* IMAGE */
+.pro_img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pro_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.mainCard:hover .pro_img img {
+  transform: scale(1.05);
+}
+
+/* DETAILS */
+.pro_details {
+  margin-top: 12px;
+}
+
+.pro_details strong {
+  font-size: 17px;
+  color: #111827;
+}
+
+.pro_details p {
+  font-size: 14px;
+  color: #4b5563;
+  margin: 6px 0;
+  text-transform: capitalize;
+}
+
+/* RATING */
+.rating_details {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #374151;
+  text-decoration: none;
+}
+
+.rating_details img {
+  width: 15px;
+}
+
+.rating_review_count {
+  display: inline-block;
+  font-size: 13px;
+  color: #6b7280;
+  margin-left: 6px;
+}
+
+/* ADD TO CART BUTTON */
+.add_to_cart {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: #111827;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add_to_cart img {
+  width: 18px;
+  filter: invert(1);
+}
+
+.add_to_cart:hover {
+  background: #2563eb;
+  transform: scale(1.1);
+}
+
+/* OUT OF STOCK (optional future use) */
+.out_of_stock {
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #dc2626;
+  border-radius: 14px;
+}

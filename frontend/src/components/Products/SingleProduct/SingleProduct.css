@@ -1,0 +1,141 @@
+.single_product {
+  display: flex;
+  gap: 40px;
+  padding: 40px 60px;
+  background: #fff;
+}
+
+/* ---------- LEFT IMAGE SECTION ---------- */
+.single_product_images {
+  display: flex;
+  gap: 15px;
+}
+
+/* Thumbnails */
+.single_product_thumbnails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.single_product_thumbnails img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border: 2px solid #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.single_product_thumbnails img:hover {
+  border-color: #2874f0;
+}
+
+/* Main Image */
+.single_product_display {
+  width: 420px;
+  height: 420px;
+  object-fit: contain;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 10px;
+  background: #fafafa;
+}
+
+/* ---------- RIGHT DETAILS SECTION ---------- */
+.single_product_details {
+  flex: 1;
+}
+
+.single_product_details h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.single_product_details p {
+  color: #555;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.single_product_details strong {
+  display: block;
+  font-size: 26px;
+  color: #000;
+  margin: 15px 0;
+}
+
+/* ---------- QUANTITY ---------- */
+.quantity_select {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.quantity_input {
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.quantity_select p {
+  font-size: 18px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* ---------- ADD TO CART ---------- */
+.single_product_details button {
+  padding: 12px 30px;
+  font-size: 16px;
+  background: #2874f0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.single_product_details button:hover {
+  background: #0b5ed7;
+}
+.quantity_select {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 15px 0;
+}
+
+.quantity_input {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #d1d9e6;
+  background: #f5f7fa;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+
+
+.quantity_input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.quantity_select p {
+  min-width: 30px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #222;
+}

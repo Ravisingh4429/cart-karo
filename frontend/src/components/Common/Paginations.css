@@ -1,0 +1,55 @@
+/* Pagination wrapper */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+/* Remove default list style */
+.pagination ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Pagination item */
+.pagination li {
+  display: inline-block;
+}
+
+/* Button style */
+.pagination button {
+  min-width: 38px;
+  height: 38px;
+  padding: 0 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background-color: #ffffff;
+  color: #111827;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+.pagination button:hover {
+  background-color: #f59e0b;
+  color: #ffffff;
+  border-color: #f59e0b;
+}
+
+/* Active page */
+.pagination button.active {
+  background-color: #f59e0b;
+  color: #ffffff;
+  border-color: #f59e0b;
+}
+
+/* Disabled (optional for prev/next) */
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

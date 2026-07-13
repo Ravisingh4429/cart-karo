@@ -1,0 +1,61 @@
+/* Sidebar container */
+.side_bar {
+  width: 230px;
+  background: #ffffff;
+  padding: 18px 16px;
+  border-radius: 12px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  height: fit-content;
+}
+
+/* Title */
+.side_bar h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #111827;
+}
+
+/* Category list */
+.side_bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each category */
+.side_bar li {
+  margin-bottom: 10px;
+}
+
+/* Category link */
+.side_bar a {
+  display: block;
+  padding: 8px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #374151;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* Hover effect */
+.side_bar a:hover {
+  background: #f1f5f9;
+  color: #2563eb;
+}
+
+/* Error message */
+.error_category {
+  color: #dc2626;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .side_bar {
+    width: 100%;
+  }
+}

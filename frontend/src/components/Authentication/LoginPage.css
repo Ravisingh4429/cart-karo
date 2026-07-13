@@ -1,0 +1,75 @@
+/* Page background */
+.form_page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(135deg, #f5f7fa, #e4ebf5); */
+}
+
+/* Form card */
+.authentication_form {
+  background: #ffffff;
+  width: 360px;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.authentication_form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+/* Input container */
+.form_input {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label */
+.form_input label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Input fields */
+.form_input input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+.error_message{
+  color: red;
+}
+
+.form_input input:focus {
+  border-color: #4f7cff;
+}
+
+/* Login button */
+.form_input button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #4f7cff;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form_input button:hover {
+  background: #345ef5;
+}

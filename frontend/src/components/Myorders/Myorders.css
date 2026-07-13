@@ -1,0 +1,107 @@
+.order_main {
+  padding: 20px;
+}
+
+.order_box {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.order_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #333;
+}
+/* ================= MY ORDERS ================= */
+
+.order_box {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+/* ---------- ORDER HEADER ---------- */
+.order_header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+.order_header p {
+  margin: 0;
+  color: #374151;
+}
+
+.order_header strong {
+  color: #111827;
+}
+
+/* ---------- STATUS BADGE ---------- */
+.order_status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.order_status.pending {
+  background: #fff7ed;
+  color: #f97316;
+}
+
+.order_status.delivered {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+.order_status.cancelled {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+/* ---------- MY ORDER CART CARD OVERRIDE ---------- */
+.order_box .cart_details {
+  box-shadow: none;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 14px;
+}
+
+.order_box .cart_details:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- READONLY QUANTITY ---------- */
+.order_box .quantity {
+  gap: 10px;
+}
+
+.order_box .quantity p {
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Hide buttons in readonly mode (safety) */
+.order_box .quantity button {
+  display: none;
+}
+
+/* ---------- EMPTY ORDERS ---------- */
+.empty_orders {
+  text-align: center;
+  padding: 40px;
+  color: #6b7280;
+  font-size: 16px;
+}
+  
